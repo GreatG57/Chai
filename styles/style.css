@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #d2b48c, #8b4513); /* Chai brown gradient */
-  color: #fff
+  color: #726a62
   }
 
 .container {
@@ -24,13 +24,13 @@ body {
   
   a {
     text-decoration: none;
-    color: white;
+    color: #D8CFC4;
   }
   
   /* Hero Section */
   .hero {
     background: url('chai-background.jpg') no-repeat center center/cover;
-    color: white;
+    color: #b46329;
     padding: 100px 0;
     text-align: center;
   }
@@ -60,7 +60,7 @@ body {
   /* Our Blend Section */
   .our-blend {
     padding: 50px 20px;
-    background-color: #ecf0f1;
+    background-color: #bb996e;
   }
   
   .our-blend .blend-details {
@@ -81,7 +81,7 @@ body {
 /* Meet the Team Section */
 .meet-the-team {
   padding: 50px 20px;
-  background-color: #ecf0f1;
+  background-color: #c9a77b;
   text-align: center;
 }
 
@@ -113,12 +113,7 @@ body {
 }
 
 /* Extra Team Members */
-.extra-team-members {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.5s ease, max-height 0.5s ease;
-}
+
 
 
 /* Show More Button */
@@ -139,7 +134,7 @@ body {
   /* Testimonials Section */
   .testimonials {
     padding: 50px 20px;
-    background-color: #f4f4f9;
+    background-color: #d2b48c;
   }
   
   .testimonials blockquote {
@@ -157,14 +152,30 @@ body {
   /* Locations & Catalog Section */
   .locations-catalog {
     padding: 50px 20px;
-    background-color: #ecf0f1;
+    background-color: #e3d7c9;
     text-align: center;
   }
+  .map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
   
   /* Apply Here Section */
   .apply {
     padding: 50px 20px;
-    background-color: #f4f4f9;
+    background-color: #f5f5dc;
     text-align: center;
   }
   
@@ -185,38 +196,3 @@ body {
     display: inline;
     margin: 0 15px;
   }
-  
-  /* Meet the Team Section */
-  .meet-the-team {
-    padding: 50px 20px;
-    background-color: #ecf0f1;
-    text-align: center;
-  }
-
-  .meet-the-team h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-
-  .team-member {
-    margin-bottom: 30px;
-  }
-
-  .team-photo {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-
-  .team-member h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-
-  .team-member p {
-    font-size: 1rem;
-    color: #666;
-  }
-
